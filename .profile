@@ -10,6 +10,8 @@ function parse_git_branch() {
 
 export PS1="\u:\w \`parse_git_branch\`\\$ "
 
+alias ll="ls -la"
+
 alias gst="git status"
 alias gdf="git diff"
 alias gdc="git diff --cached"
