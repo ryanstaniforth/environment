@@ -1,4 +1,4 @@
 {
-    "explorer.openEditors.visible": 0
+    "explorer.openEditors.visible": 0,
+    "javascript.preferences.quoteStyle": "single"
 }
-
