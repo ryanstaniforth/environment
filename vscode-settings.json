@@ -1,5 +1,6 @@
 {
     "explorer.openEditors.visible": 0,
     "editor.minimap.enabled": false,
-    "javascript.preferences.quoteStyle": "single"
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
 }
