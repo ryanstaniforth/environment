@@ -1,6 +1,7 @@
 {
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
     "explorer.openEditors.visible": 0,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
