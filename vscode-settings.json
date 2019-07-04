@@ -1,5 +1,6 @@
 {
     "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "none",
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
     "explorer.openEditors.visible": 0,
