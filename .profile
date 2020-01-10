@@ -12,6 +12,11 @@ export PS1="\u:\w \`parse_git_branch\`\\$ "
 
 alias ll="ls -la"
 
+alias python-server="python -m SimpleHTTPServer"
+
+alias docker-mysql-create="docker run --name generic-mysql -e MYSQL_ROOT_PASSWORD=toor -p 3399:3306 -d mysql:latest"
+alias docker-mysql="docker exec -it generic-mysql mysql -p"
+
 alias gst="git status"
 alias gdf="git diff"
 alias gdc="git diff --cached"
