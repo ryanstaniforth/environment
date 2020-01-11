@@ -10,5 +10,8 @@
     "editor.suggest.localityBonus": true,
     "editor.tabCompletion": "on",
     "javascript.preferences.quoteStyle": "single",
-    "typescript.preferences.quoteStyle": "single"
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "window.openFoldersInNewWindow": "on",
+    "explorer.compactFolders": false
 }
