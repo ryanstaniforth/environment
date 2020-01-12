@@ -22,6 +22,10 @@ alias docker-postgres-create="docker run --rm --name generic-postgres -e POSTGRE
 alias docker-postgres-destroy="docker rm -f generic-postgres"
 alias docker-postgres="docker exec -it generic-postgres psql -U postgres"
 
+alias docker-redis-create="docker run --rm --name generic-redis -d redis"
+alias docker-redis-destroy="docker rm -f generic-redis"
+alias docker-redis="docker exec -it generic-redis redis-cli"
+
 alias gst="git status"
 alias gdf="git diff"
 alias gdc="git diff --cached"
