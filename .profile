@@ -14,7 +14,7 @@ alias ll="ls -la"
 
 alias python-server="python -m SimpleHTTPServer"
 
-alias docker-mysql-create="docker run --rm --name generic-mysql -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=test -p 3399:3306 -d mysql:latest --default-authentication-plugin=mysql_native_password"
+alias docker-mysql-create="docker run --rm --name generic-mysql -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=test -p 3399:3306 -d mysql --default-authentication-plugin=mysql_native_password"
 alias docker-mysql-destroy="docker rm -f generic-mysql"
 alias docker-mysql="docker exec -it generic-mysql mysql -p"
 
@@ -22,7 +22,7 @@ alias docker-postgres-create="docker run --rm --name generic-postgres -e POSTGRE
 alias docker-postgres-destroy="docker rm -f generic-postgres"
 alias docker-postgres="docker exec -it generic-postgres psql -U postgres"
 
-alias docker-redis-create="docker run --rm --name generic-redis -d redis"
+alias docker-redis-create="docker run --rm --name generic-redis -p 6400:6379 -d redis"
 alias docker-redis-destroy="docker rm -f generic-redis"
 alias docker-redis="docker exec -it generic-redis redis-cli"
 
