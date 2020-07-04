@@ -1,14 +1,9 @@
-function parse_git_branch() {
-  BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-  if [ ! "${BRANCH}" == "" ]
-  then
-    echo "[${BRANCH}]"
-  else
-    echo ""
-  fi
-}
+setopt prompt_subst
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '[%b] '
+precmd () { vcs_info }
 
-export PS1="\u:\w \`parse_git_branch\`\\$ "
+PROMPT="%n:%~ \$vcs_info_msg_0_$ "
 
 alias ll="ls -la"
 
