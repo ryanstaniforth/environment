@@ -1,5 +1,8 @@
-setopt prompt_subst
 autoload -Uz vcs_info
+
+setopt noautomenu
+setopt prompt_subst
+
 zstyle ':vcs_info:*' formats '[%b] '
 precmd () { vcs_info }
 
