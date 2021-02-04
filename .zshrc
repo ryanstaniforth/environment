@@ -35,3 +35,5 @@ alias gpl="git pull"
 alias gft="git fetch"
 alias gbr="git branch"
 alias ghi="git log --all --graph --decorate --oneline --simplify-by-decoration"
+# git rebase progress
+alias grp='( RaD="$( git rev-parse --git-path 'rebase-apply/' )" && N=$( cat "${RaD}next" ) && L=$( cat "${RaD}last" ) && echo "${N} / ${L}" ; )'
