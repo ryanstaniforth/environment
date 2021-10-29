@@ -11,7 +11,7 @@ PROMPT="%n:%~ \$vcs_info_msg_0_$ "
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin/"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/"
 
-alias idea="open -na \"IntelliJ IDEA.app\" --args"
+alias idea="open -na \"IntelliJ IDEA CE.app\" --args"
 
 alias ll="ls -la"
 
