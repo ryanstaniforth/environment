@@ -13,5 +13,6 @@
     "typescript.updateImportsOnFileMove.enabled": "never",
     "window.openFoldersInNewWindow": "on",
     "explorer.compactFolders": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false
 }
