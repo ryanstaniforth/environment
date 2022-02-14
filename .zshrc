@@ -1,18 +1,27 @@
+# Shell prompt
 autoload -Uz vcs_info
-
 setopt noautomenu
 setopt prompt_subst
-
 zstyle ':vcs_info:*' formats '[%b] '
 precmd () { vcs_info }
-
 PROMPT="%n:%~ \$vcs_info_msg_0_$ "
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Fast Node Manager
+eval "$(fnm env --use-on-cd)"
+
+#Sublime Text
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin/"
+
+# VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin/"
 
+# Intelij IDEA
 alias idea="open -na \"IntelliJ IDEA CE.app\" --args"
 
+# Helper aliases
 alias ll="ls -la"
 
 alias python-server="python -m SimpleHTTPServer"
