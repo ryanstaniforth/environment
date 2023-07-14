@@ -16,6 +16,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
