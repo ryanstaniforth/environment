@@ -14,5 +14,6 @@
     "window.openFoldersInNewWindow": "on",
     "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true
 }
