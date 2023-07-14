@@ -15,8 +15,14 @@
     ```bash
     echo "source ~/dev/environment/.zshrc" >> ~/.zshrc
     ```
+- Set up VSCode settings symlink.
+    ```bash
+    cd ~/Library/Application\ Support/Code/User
+    rm settings.json
+    ln -s ~/dev/environment/vscode-settings.json settings.json
+    ```
 
-- Set up sublime settings symlink.
+- Set up Sublime settings symlink.
     ```bash
     cd ~/Library/Application\ Support/Sublime\ Text/Packages/User
     rm Preferences.sublime-settings
