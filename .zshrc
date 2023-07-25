@@ -23,6 +23,7 @@ alias idea="open -na \"IntelliJ IDEA CE.app\" --args"
 
 # Helper aliases
 alias ll="ls -la"
+alias date8601="date +\"%Y-%m-%dT%H:%M:%S\""
 
 alias python-server="python3 -m http.server"
 
@@ -51,3 +52,7 @@ alias gbr="git branch"
 alias ghi="git log --all --graph --decorate --oneline --simplify-by-decoration"
 # git rebase progress
 alias grp='( RaD="$( git rev-parse --git-path 'rebase-apply/' )" && N=$( cat "${RaD}next" ) && L=$( cat "${RaD}last" ) && echo "${N} / ${L}" ; )'
+# git commit at set date
+alias gcmdate='GIT_AUTHOR_DATE="$DATE" GIT_COMMITTER_DATE="$DATE" git commit -m'
+# log comits with author and comitter dates
+alias glogdates='git log --pretty="%cn %cd - %an %ad" HEAD'
