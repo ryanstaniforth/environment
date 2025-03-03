@@ -10,7 +10,7 @@ PROMPT="%n:%~ \$vcs_info_msg_0_$ "
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Fast Node Manager
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd --version-file-strategy recursive)"
 
 #Sublime Text
 export PATH="$PATH:/Applications/Sublime Text.app/Contents/SharedSupport/bin/"
@@ -56,3 +56,5 @@ alias grp='( RaD="$( git rev-parse --git-path 'rebase-apply/' )" && N=$( cat "${
 alias gcmdate='GIT_AUTHOR_DATE="$DATE" GIT_COMMITTER_DATE="$DATE" git commit -m'
 # log comits with author and comitter dates
 alias glogdates='git log --pretty="%cn %cd - %an %ad" HEAD'
+# delete all local branches except main/master
+alias gdlb='git for-each-ref --format "%(refname:short)" refs/heads | grep -v "main\|master" | xargs git branch -D'
