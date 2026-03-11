@@ -21,6 +21,16 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # Intelij IDEA
 alias idea="open -na \"IntelliJ IDEA CE.app\" --args"
 
+# Git diff config
+git config --global core.pager delta
+git config --global delta.navigate true
+git config --global delta.light false
+git config --global delta.line-numbers true
+git config --global interactive.diffFilter
+git config --global delta.hunk-header-style omit
+git config --global delta.syntax-theme "Visual Studio Dark+"
+
+
 # Helper aliases
 alias ll="ls -la"
 alias date8601="date +\"%Y-%m-%dT%H:%M:%S\""
@@ -41,7 +51,9 @@ alias docker-redis="docker exec -it generic-redis redis-cli"
 
 alias gst="git status"
 alias gdf="git diff"
+alias gdfs="git diff | delta --side-by-side"
 alias gdc="git diff --cached"
+alias gdcs="git diff --cached | delta --side-by-side"
 alias gad="git add"
 alias gcm="git commit -m"
 alias gch="git checkout"
@@ -50,6 +62,7 @@ alias gpl="git pull"
 alias gft="git fetch"
 alias gbr="git branch"
 alias ghi="git log --all --graph --decorate --oneline --simplify-by-decoration"
+alias guc="git reset --soft HEAD~1"
 # git rebase progress
 alias grp='( RaD="$( git rev-parse --git-path 'rebase-apply/' )" && N=$( cat "${RaD}next" ) && L=$( cat "${RaD}last" ) && echo "${N} / ${L}" ; )'
 # git commit at set date
